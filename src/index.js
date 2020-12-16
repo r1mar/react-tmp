@@ -9,8 +9,8 @@ ReactDOM.render(
   <Router>
     <Switch>
       <Route exact path="/" component={App} />
-      <Route path="/not-found" component={NotFound} />
- <Route component={NotFound} />
+      //<Route path="/not-found" component={NotFound} />
+// <Route component={NotFound} />
     </Switch>
   </Router>,
   document.getElementById("root")
