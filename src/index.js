@@ -3,4 +3,15 @@ import ReactDOM from "react-dom";
 
 import App from "./App";
 
-ReactDOM.render(<App />, document.getElementById("root"));
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
+ReactDOM.render(
+  <Router>
+    <Switch>
+      <Route exact path="/" component={App} />
+      <Route path="/not-found" component={NotFound} />
+ <Route component={NotFound} />
+    </Switch>
+  </Router>,
+  document.getElementById("root")
+);
